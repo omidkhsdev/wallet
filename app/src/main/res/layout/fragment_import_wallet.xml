@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="false"
+    tools:context=".LoginActivity">
+
+    <include
+        layout="@layout/layout_loading"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/_20sdp"
+        app:layout_constraintGuide_percent="0.35" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/_20sdp"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/_20sdp"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <Button
+        android:id="@+id/fragment_import_wallet_import"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_login"
+        android:drawableLeft="@drawable/ic_import_wallet"
+        android:drawablePadding="@dimen/_7sdp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_55sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingRight="@dimen/_55sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/txt_import_wallet"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"
+        app:layout_constraintVertical_bias="0.245" />
+    <Button
+        android:id="@+id/fragment_import_wallet_create_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/selector_green_border_white_back"
+        android:drawableStart="@drawable/ic_new_wallet"
+        android:drawableLeft="@drawable/ic_new_wallet"
+        android:drawablePadding="@dimen/_7sdp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_40sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingRight="@dimen/_40sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/txt_create_wallet"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_import_wallet_import"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

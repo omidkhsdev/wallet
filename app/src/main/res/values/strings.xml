@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Bitcoin Wallet</string>
+    <string name="login_hint_email">Email</string>
+    <string name="login_hint_password">Password</string>
+    <string name="activity_login_tv_title">Bitcoin Secure Wallet</string>
+    <string name="txt_login_register">Login/Register</string>
+    <string name="txt_forget_pass"><u>Forget Password?</u></string>
+    <string name="txt_app_name">Bitcoin Wallet</string>
+    <string name="txt_my_wallet">My Wallet</string>
+    <string name="txt_exchange">Exchange</string>
+    <string name="txt_transaction">Transactions</string>
+    <string name="txt_bitcoin_price">Bitcoin Price:</string>
+    <string name="txt_wallet_address">Wallet address</string>
+    <string name="txt_send_transfer">Transfer</string>
+    <string name="txt_btn_export">Export Wallet</string>
+    <string name="txt_sign_out">Sign Out</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_email_recovery">Recover Your Password</string>
+    <string name="txt_submit">Submit</string>
+    <string name="txt_import_wallet">Import Wallet</string>
+    <string name="txt_create_wallet">Create New Wallet</string>
+    <string name="txt_balance">Your balance</string>
+    <string name="txt_copy_wallet_address">Copy wallet address</string>
+    <string name="txt_back_to_login">Back to Login</string>
+
+
+    <string name="error_invalid_email">email address is invalid</string>
+    <string name="error_empty_password">password cant be empty</string>
+    <string name="email_send">email send</string>
+    <string name="error">Error!</string>
+    <string name="txt_confirm">Confirm</string>
+    <string name="txt_amount">Amount</string>
+    <string name="txt_dismiss">Dismiss</string>
+
+
+    //general names
+    <string name="general_wallet_fragment_name">My Wallet</string>
+    <string name="general_transaction_fragment_name">Transactions</string>
+    <string name="general_exchange_fragment_name">Exchange</string>
+
+    <string name="toast_copy_wallet_address">Wallet address copied</string>
+    <string name="toast_copy_private_key">Private key copied</string>
+    <string name="something_went_wrong">Something went wrong.try again later please!</string>
+    <string name="copy">Copy</string>
+    <string name="toast_use_vpn">you are in gdpr locations , please use vpn or proxy for more security and accessing to api</string>
+    <string name="txt_private_key">Private key</string>
+    <string name="empty_wallet_price">You need to charge your account</string>
+    <string name="wrong_password">Password is incorrect</string>
+    <string name="txt_privacy_policy">Privacy policy</string>
+
+
+</resources>

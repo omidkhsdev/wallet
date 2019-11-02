@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_item_my_wallet"
+        android:title="@string/txt_my_wallet"
+        android:icon="@drawable/btcwallet"
+        />
+    <item
+        android:id="@+id/menu_item_transaction"
+        android:title="@string/txt_transaction"
+        android:icon="@drawable/transactions"/>
+    <item
+        android:id="@+id/menu_item_exchange"
+        android:title="@string/txt_exchange"
+        android:icon="@drawable/sweep"/>
+
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryLight">#6c9585</color>
+    <color name="colorPrimary">#436E67</color>
+    <color name="colorPrimaryDark">#233A48</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="color_theme">#436E67</color>
+
+    <color name="red_btn_register">#D81B37</color>
+    <color name="red_btn_register_clicked">#BD0B0B</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="wallet_bar_color">#2196F3</color>
+    <color name="gray">#828282</color>
+    <color name="gray_scan">#F7F7F7</color>
+    <color name="btn_export">#076C00</color>
+    <color name="btn_export_dark">#085701</color>
+    <color name="khaki">#F7F0F0</color>
+    <color name="milky">#F3EBDD</color>
+    <color name="yellow">#FF6F00</color>
+    <color name="gray_white">#C7C7C7</color>
+    <color name="texts_color">#E5E3CE</color>
+    <color name="light_green">#BED0A6</color>
+    <color name="color_ic_receive">#C80058</color>
+
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:layout_marginBottom="@dimen/_3sdp"
+    app:cardCornerRadius="@dimen/_3sdp"
+    app:cardElevation="@dimen/_2sdp"
+    >
+
+    <LinearLayout
+        android:id="@+id/adapter_exchange_card_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/selector_exchange_rv_items"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/adapter_exchange_line_bar"
+            android:layout_width="@dimen/_4sdp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginRight="@dimen/_6sdp"
+            android:background="@drawable/shape_exchange_line"
+          />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_2sdp">
+
+            <TextView
+                android:id="@+id/adapter_exchange_tv_currency_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ethereum"
+                android:layout_marginBottom="@dimen/_1sdp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/adapter_exchange_tv_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:text="exchange BTC to NEO"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_8sdp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

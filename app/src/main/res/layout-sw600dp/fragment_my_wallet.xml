@@ -1,0 +1,136 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/wallet_nested_scrollview"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="@dimen/_12sdp"
+        tools:context="com.bitcoin.wallet.Fragments.MyWalletFragment">
+
+        <include layout="@layout/layout_loading" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline300"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/relative_wallet_public_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:hint="@string/txt_wallet_address"
+            android:textColorHint="@color/colorPrimary"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="@dimen/_3sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_3sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_3sdp"
+            app:boxCornerRadiusTopStart="@dimen/_3sdp"
+            app:boxStrokeColor="@color/colorPrimary"
+
+            app:boxStrokeWidth="@dimen/_1sdp"
+            app:hintAnimationEnabled="true"
+            app:hintTextAppearance="@style/PublicKeyStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_wallet_tiet_public_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableRight="@drawable/ic_copy"
+                android:drawablePadding="@dimen/_8sdp"
+                android:enabled="false"
+                android:focusable="false"
+                android:gravity="start|center"
+                android:inputType="textMultiLine"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="026239059376999f878403e19e0f1ef833a8c86d0de736cd8ba55c9538354603bb"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ImageView
+            android:id="@+id/fragment_wallet_imgv_qrcode"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_qrcode"
+            app:layout_constraintBottom_toBottomOf="@id/fragment_wallet_btn_scan_qrcode"
+            app:layout_constraintEnd_toStartOf="@id/fragment_wallet_btn_copy_pub_key"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relative_wallet_public_key" />
+
+
+        <Button
+            android:id="@+id/fragment_wallet_btn_copy_pub_key"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/selector_green_border_white_back"
+            android:text="@string/txt_copy_wallet_address"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1.5"
+            app:layout_constraintStart_toEndOf="@id/fragment_wallet_imgv_qrcode"
+            app:layout_constraintTop_toBottomOf="@id/relative_wallet_public_key" />
+
+        <Button
+            android:id="@+id/fragment_wallet_btn_scan_qrcode"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:background="@drawable/selector_btn_green"
+            android:text="@string/txt_send_transfer"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1.5"
+            app:layout_constraintStart_toEndOf="@id/fragment_wallet_imgv_qrcode"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_wallet_btn_copy_pub_key" />
+
+        <Button
+            android:id="@+id/fragment_wallet_btn_export"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/selector_green_border_white_back"
+            android:text="@string/txt_btn_export"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline300"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_wallet_imgv_qrcode"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

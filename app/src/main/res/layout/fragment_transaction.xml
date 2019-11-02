@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bitcoin.wallet.Fragments.ExchangeFragment">
+
+    <include
+        layout="@layout/layout_loading"/>
+    <include
+        layout="@layout/layout_empty"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_transaction_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"/>
+
+</RelativeLayout>
+

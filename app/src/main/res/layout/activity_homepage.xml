@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_homepage_pullToRefresh"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:clipToPadding="false"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/collapsing_toolbar" />
+
+        <include layout="@layout/layout_loading"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/activity_homepage_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <FrameLayout
+                android:id="@+id/activity_homepage_fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

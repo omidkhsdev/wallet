@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="false"
+    tools:context=".LoginActivity">
+
+    <include
+        layout="@layout/layout_loading" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/_20sdp"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="@string/activity_login_tv_title"
+        android:textColor="@color/texts_color"
+        android:textSize="@dimen/_24sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:textColor="@color/black" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/relative_input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:gravity="center"
+        android:hint="@string/login_hint_email"
+        android:textColorHint="@color/white"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="@dimen/_4sdp"
+        app:boxCornerRadiusBottomStart="@dimen/_4sdp"
+        app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+        app:boxCornerRadiusTopStart="@dimen/_4sdp"
+        app:boxStrokeColor="@android:color/white"
+        app:boxStrokeWidth="@dimen/_1sdp"
+        app:hintAnimationEnabled="true"
+        app:hintTextAppearance="@style/hintTextLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/cursor_color_edittext"
+            android:textSize="@dimen/_14sdp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/relative_input_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:gravity="center"
+        android:textColorHint="@color/white"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="@dimen/_4sdp"
+        app:boxCornerRadiusBottomStart="@dimen/_4sdp"
+        app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+        app:boxCornerRadiusTopStart="@dimen/_4sdp"
+        app:boxStrokeColor="@android:color/white"
+        app:boxStrokeWidth="@dimen/_1sdp"
+        app:hintAnimationEnabled="true"
+        app:hintTextAppearance="@style/hintTextLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:passwordToggleTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/relative_input_email"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:hint="@string/login_hint_password"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLength="40"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textCursorDrawable="@drawable/cursor_color_edittext"
+            android:textSize="@dimen/_14sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/activity_login_btn_login_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_55sdp"
+        android:layout_marginRight="@dimen/_55sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:background="@drawable/selector_btn_login"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/txt_login_register"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relative_input_pass" />
+
+    <TextView
+        android:id="@+id/activity_login_tv_forget_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/txt_forget_pass"
+        android:textColor="@color/texts_color"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_login_btn_login_register"
+        tools:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/activity_login_tv_privacy_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/txt_privacy_policy"
+        android:textColor="@color/texts_color"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_login_tv_forget_pass"
+        tools:textColor="@color/black" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
